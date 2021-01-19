@@ -43,4 +43,12 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
     * Balance: Your balance of ABTC, this will increase when you get more coin
     * Log: Some logs of mining events
     
+ 5. For Developers
+ 
+    For users that prefer write their owne code, they can write mining code.
+    
+    We use `Keccak256` as POW hash algorithm, the target calculation forluma is: 
+    ```
+    target <= keccak256(new_height, last_nonce, my_account, my_nonce)
+    ```
 
