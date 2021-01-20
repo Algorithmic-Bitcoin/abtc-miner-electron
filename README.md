@@ -10,7 +10,7 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 
     Users should have Ethereum endpoint RPC, like infura.
     * How to get a Ethereum endpoint RPC? Register [infura](https://infura.io/) account, then you will have 3 free endpoint RPC.
-    * The infura endpoint RPC should be http format, something like: `https://kovan.infura.io/v3/bacd74e720210d858b29a1b5643fd3b3` (Don't use it, it is a)
+    * The infura endpoint RPC should be http format, something like: `https://kovan.infura.io/v3/bacd74e720210d858b29a1b5643fd3b3` (Don't use it, it just a example.)
    
 2. Ethereum account with ETH
 
