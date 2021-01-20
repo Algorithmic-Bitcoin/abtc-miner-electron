@@ -21,7 +21,11 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 
 1. Download miner
 
-    There two platform supported right now: Windows/MacOS. Download what suit for you.
+    There two platform supported right now: 
+    * [Windows](https://github.com/Algorithmic-Bitcoin/abtc-miner/releases/download/0.1.0/Miner-0.1.0.exe)
+    * [MacOS](https://github.com/Algorithmic-Bitcoin/abtc-miner/releases/download/0.1.0/Miner-0.1.0.dmg) 
+    
+    Download what suits for you.
 
 2. Fill in RPC and private key
 
