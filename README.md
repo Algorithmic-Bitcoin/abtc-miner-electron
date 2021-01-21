@@ -10,11 +10,11 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 
     Users should have Ethereum endpoint RPC, like infura.
     * How to get a Ethereum endpoint RPC? Register [infura](https://infura.io/) account, then you will have 3 free endpoint RPC.
-    * The infura endpoint RPC should be http format, something like: `https://kovan.infura.io/v3/bacd74e720210d858b29a1b5643fd3b3` (Don't use it, it just a example.)
+    * The infura endpoint RPC should be http format, something like: `https://mainnet.infura.io/v3/bacd74e720210d858b29a1b5643fd3b3` (Don't use it, it just a example.)
    
 2. Ethereum account with ETH
 
-    Users need some ETH to pay gas when submit mined block.
+    Users need some ETH to pay gas when submit mined block. You need enough ETH to pay gas when you submit a mined block.
 
 
 ### Let's party!
@@ -31,32 +31,37 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
     
     Download what suits for you.
 
-2. Fill in RPC and private key
+2. Configure
 
-    RPC endpoint is what you applied above. It's important to remember that infura free service has a max of 100000 request per day, so if you run out of request, you should a new RPC endpoint so that you can continue, otherwise it will fail when you submit your mined block.
+    Unzip downloaded file, there will be a app named `miner.exe`(`miner` in Mac), and a configure file named `config.toml`. First open `config.toml` file you just unziped, it has 4 fields.
     
-    Private key is your hex string format of private key, you should always handle your private key carefully, for a surcurity reason, you shouldn't have much ETH in your mining account, just some ETH that enough to pay the gas will do.
+    `rpc` is what you applied above. It's important to remember that infura free service has a max of 100000 request per day, so if you run out of request, you should a new RPC endpoint so that you can continue, otherwise it will fail when you submit your mined block.
     
-    Gas Price is optional, since low gas price could lead slow block confirm, which is a chance wasting. It recommanded that you should select `HIGH` gas price.
+    `key` is your hex string format of private key, you should always handle your private key carefully, for a surcurity reason, you shouldn't have much ETH in your mining account, just some ETH that enough to pay the gas will do.
+    
+    `thread` is the number of how many miners do you want to mining on your computer, normally, it recommanded that you should keep this same as your computer's CPU kernel number, for example, if you have a 4 kernel CPU computer, you'd better set this parameter as 4.
+    
+    `interval` is how many seconds do you want your miner to check the latest information of the blockchain, it recommanded that you should not change this, excepte you are a expert of this.
     
 3. Start mining
 
-    Just press the `START` button when you fill in above options. Let your computer do the magic and hopefuly will get you a `ABTC`!
-      
-4. Other
-
-    * My address: Your address decoded from your private key
-    * Target: Current target of POW difficulty
-    * Height: Current height of POW
-    * Balance: Your balance of ABTC, this will increase when you get more coin
-    * Log: Some logs of mining events
+    Just come into your miner's path, execute `miner.exe`(`miner` in Mac) will do. Let your computer do the magic and hopefuly will get you a `ABTC`!
     
- 5. For Developers
+    When you found something like:
+    ```
+    *************Found!*************
+    my nonce: xxx
+    ```
+    It means you just mined a block, and be rewarded of some ABTC coin.
+    
+ 4. For Developers
  
     For users that prefer write their owne code, they can write mining code.
     
     We use `Keccak256` as POW hash algorithm, the target calculation forluma is: 
     ```
-    target <= keccak256(new_height, last_nonce, my_account, my_nonce)
+    keccak256(new_height, last_nonce, my_account, my_nonce) <= current_target
     ```
+    
+    The core code is determine if your calculated target is smaller than current target. The target changed every 6 blocks, which means 1 hours theoretically speaking.
 
