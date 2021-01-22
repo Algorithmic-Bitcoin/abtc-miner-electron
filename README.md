@@ -64,4 +64,8 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
     ```
     
     The core code is determine if your calculated target is smaller than current target. The target changed every 6 blocks, which means 1 hours theoretically speaking.
+    
+    We implement Python implmentation for this:
+    
+    * [Python Miner](https://github.com/Algorithmic-Bitcoin/abtc-miner-python)
 
