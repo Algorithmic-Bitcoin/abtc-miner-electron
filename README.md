@@ -1,5 +1,5 @@
 # abtc-miner
-A desktop miner for ABTC.
+A miner for ABTC.
 
 It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 
