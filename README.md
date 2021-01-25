@@ -31,7 +31,7 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
     
         (MD5: aec507cd4b49400e96c36bf37812ade9, SHA1: 01b18f304390486aa56ffa13c6fb725fc4a6a73a)
     
-    Download what suits for you.
+    Chooese one what suits for you.
 
 2. Configure
 
