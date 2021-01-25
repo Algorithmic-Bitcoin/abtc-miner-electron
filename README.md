@@ -3,6 +3,8 @@ A desktop miner for ABTC.
 
 It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 
+* ABTC token address: 0xfa37a50da41b4b50e58186ddea3b6bb19b39a024
+
 ## How to use it
 
 ### Preparation
