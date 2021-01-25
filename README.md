@@ -22,18 +22,18 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 1. Download miner
 
     There two platform supported right now: 
-    * [Windows](https://github.com/Algorithmic-Bitcoin/abtc-miner/releases/download/0.2.0/abtc-miner-win-v0.2.0.zip) 
+    * [Windows](https://github.com/Algorithmic-Bitcoin/abtc-miner/releases/download/0.2.2/Miner 0.2.2.exe) 
     
-        (MD5: e8333e52a8279e3eeff6af585b545f44, SHA1: 33116b2432ee51b971d4e2e3c12dc92de642c08b)
-    * [MacOS](https://github.com/Algorithmic-Bitcoin/abtc-miner/releases/download/0.2.0/abtc-miner-mac-v0.2.0.zip) 
+        (MD5: 36261409b1f043ad2befd3790096874e, SHA1: 81a69317cfe7297b8f2db8d372364a026e97e52c)
+    * [MacOS](https://github.com/Algorithmic-Bitcoin/abtc-miner/releases/download/0.2.2/Miner-0.2.2.dmg) 
     
-        (MD5: c70872d8f1fddb44de79ed3c5afcb3d6, SHA1: e26884be1690b6eeb4e8ff992ff3723f1523775b)
+        (MD5: aec507cd4b49400e96c36bf37812ade9, SHA1: 01b18f304390486aa56ffa13c6fb725fc4a6a73a)
     
     Download what suits for you.
 
 2. Configure
 
-    Unzip downloaded file, there will be a app named `miner.exe`(`miner` in Mac), and a configure file named `config.toml`. First open `config.toml` file you just unziped, it has 4 fields.
+    Open miner application. There are 3 fields you should fill in.
     
     `RPC endpoint` is what you applied above. It's important to remember that infura free service has a max of 100000 request per day, so if you run out of request, you should a new RPC endpoint so that you can continue, otherwise it will fail when you submit your mined block.
     
@@ -45,13 +45,27 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 
     Just come into your miner's path, execute `miner.exe`(`miner` in Mac) will do. Let your computer do the magic and hopefuly will get you a `ABTC`!
     
-    When you found something like:
+    When you found something in `Log` like:
     ```
     You are lukcy!
     ```
     It means you just mined a block, and be rewarded of some ABTC coin.
     
- 4. For Developers
+ 4. Other
+ 
+    There are also some infos that are read only.
+    
+    `My Address` is your account parsed from your private key. You can check it to see if you import the right key.
+    
+    `Target` is current target of POW. Target and difficulty are opposite, while target be bigger, difficluty be smaller, vice versa.
+    
+    `Height` is current height of POW, it increases 1 per block. The average block time is 10 minutes theoretically speaking, just like *Bitcoin*.
+    
+    `Balance` is your ABTC balance, it changes when your balance changes. For example, you mined a block, or somebodu send you ABTC coin.
+    
+    `Log` prints something running logs during whole application.
+ 
+ 5. For Developers
  
     For users that prefer write their owne code, they can write mining code.
     
