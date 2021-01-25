@@ -1,5 +1,5 @@
-# abtc-miner
-A miner for ABTC.
+# abtc-miner-electron
+A desktop miner for ABTC.
 
 It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 
@@ -35,13 +35,11 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 
     Unzip downloaded file, there will be a app named `miner.exe`(`miner` in Mac), and a configure file named `config.toml`. First open `config.toml` file you just unziped, it has 4 fields.
     
-    `rpc` is what you applied above. It's important to remember that infura free service has a max of 100000 request per day, so if you run out of request, you should a new RPC endpoint so that you can continue, otherwise it will fail when you submit your mined block.
+    `RPC endpoint` is what you applied above. It's important to remember that infura free service has a max of 100000 request per day, so if you run out of request, you should a new RPC endpoint so that you can continue, otherwise it will fail when you submit your mined block.
     
-    `key` is your hex string format of private key, you should always handle your private key carefully, for a surcurity reason, you shouldn't have much ETH in your mining account, just some ETH that enough to pay the gas will do.
+    `Private key` is your hex string format of private key, you should always handle your private key carefully, for a surcurity reason, you shouldn't have much ETH in your mining account, just some ETH that enough to pay the gas will do.
     
-    `thread` is the number of how many miners do you want to mining on your computer, normally, it recommanded that you should keep this same as your computer's CPU kernel number, for example, if you have a 4 kernel CPU computer, you'd better set this parameter as 4.
-    
-    `interval` is how many seconds do you want your miner to check the latest information of the blockchain, it recommanded that you should not change this, excepte you are a expert of this.
+    `Gas Price` is the gas price you provide when you submit mined blocks. It is recommended that you should always choose `HIGH` option for quick mining speed.
     
 3. Start mining
 
@@ -49,8 +47,7 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
     
     When you found something like:
     ```
-    *************Found!*************
-    my nonce: xxx
+    You are lukcy!
     ```
     It means you just mined a block, and be rewarded of some ABTC coin.
     
@@ -63,9 +60,5 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
     keccak256(new_height, last_nonce, my_account, my_nonce) <= current_target
     ```
     
-    The core code is determine if your calculated target is smaller than current target. The target changed every 6 blocks, which means 1 hours theoretically speaking.
-    
-    We implement Python implmentation for this:
-    
-    * [Python Miner](https://github.com/Algorithmic-Bitcoin/abtc-miner-python)
+    The core code is determine if your calculated target is smaller than current target. The target changed every 3 blocks, which means 30 minutes theoretically speaking.
 
