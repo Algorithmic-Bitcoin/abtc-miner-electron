@@ -24,12 +24,12 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 1. Download miner
 
     There two platform supported right now: 
-    * [Windows](https://github.com/Algorithmic-Bitcoin/abtc-miner-electron/releases/download/0.2.2/Miner.0.2.2.exe) 
+    * [Windows](https://github.com/Algorithmic-Bitcoin/abtc-miner-electron/releases/download/0.3.0/Miner-0.3.0.exe) 
     
-        (MD5: 36261409b1f043ad2befd3790096874e, SHA1: 81a69317cfe7297b8f2db8d372364a026e97e52c)
-    * [MacOS](https://github.com/Algorithmic-Bitcoin/abtc-miner-electron/releases/download/0.2.2/Miner-0.2.2.dmg) 
+        (MD5: 2bc55d3db2462cfeef53d4f176abb6d9, SHA1: 4711288eaffbb1fa7cffbbaf36b5d3a6db5be294)
+    * [MacOS](https://github.com/Algorithmic-Bitcoin/abtc-miner-electron/releases/download/0.3.0/Miner-0.3.0.dmg) 
     
-        (MD5: aec507cd4b49400e96c36bf37812ade9, SHA1: 01b18f304390486aa56ffa13c6fb725fc4a6a73a)
+        (MD5: 4790ad36b6e38c376e713fd54450344a, SHA1: be96755fd4f63c90780fd8823daebe906fc59daf)
     
     Chooese one what suits for you.
 
