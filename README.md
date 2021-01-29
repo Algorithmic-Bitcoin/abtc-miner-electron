@@ -78,3 +78,7 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
     
     The core code is determine if your calculated target is smaller than current target. The target changed every 3 blocks, which means 30 minutes theoretically speaking.
 
+## Donation
+
+Please denote ABTC to us at `0x276Fd60790e458df29D972cc8D83783350Bc0cc0`, which will be used for the early community promotion
+
