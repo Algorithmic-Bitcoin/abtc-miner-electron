@@ -80,5 +80,5 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 
 ## Donation
 
-Please denote ABTC to us at `0x276Fd60790e458df29D972cc8D83783350Bc0cc0`, which will be used for the early community promotion
+Please denote ABTC to us at `0x276Fd60790e458df29D972cc8D83783350Bc0cc0`, which will be used for the early community promotion.
 
