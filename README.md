@@ -35,7 +35,7 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 
 2. Configure
 
-    Open miner application. There are 3 fields you should fill in.
+    Open miner application. There are 4 fields you should fill in.
     
     `RPC endpoint` is what you applied above. It's important to remember that infura free service has a max of 100000 request per day, so if you run out of request, you should a new RPC endpoint so that you can continue, otherwise it will fail when you submit your mined block.
     
