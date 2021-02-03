@@ -43,6 +43,8 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
     
     `Gas Price` is the gas price you provide when you submit mined blocks. It is recommended that you should always choose `HIGH` option for quick mining speed.
     
+    `Process number` is how many miners your application to start, it is recommended that you should set it as your CPU proccer's number.
+    
 3. Start mining
 
     Just come into your miner's path, execute `miner.exe`(`miner` in Mac) will do. Let your computer do the magic and hopefuly will get you a `ABTC`!
