@@ -3,20 +3,17 @@ A desktop miner for ABTC.
 
 It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 
-* ABTC token address: 0xfa37a50da41b4b50e58186ddea3b6bb19b39a024
+* ABTC token address: 0xFa37A50DA41B4B50E58186ddeA3B6BB19b39A024, you can refer to [HECO chain explorer](https://scan.hecochain.com/token/0xfa37a50da41b4b50e58186ddea3b6bb19b39a024).
 
 ## How to use it
 
 ### Preparation
-1. Ethereum endpoint RPC
-
-    Users should have Ethereum endpoint RPC, like infura.
-    * How to get a Ethereum endpoint RPC? Register [infura](https://infura.io/) account, then you will have 3 free endpoint RPC.
-    * The infura endpoint RPC should be http format, something like: `https://mainnet.infura.io/v3/bacd74e720210d858b29a1b5643fd3b3` (Don't use it, it just a example.)
    
-2. Ethereum account with ETH
+1. HECO account with HT
 
-    Users need some ETH to pay gas when submit mined block. You need enough ETH to pay gas when you submit a mined block.
+    Users need some HT to pay gas and mining fee when submit mined block. You need enough HT to pay gas when you submit a mined block.
+    
+    It is recommanded to use [wallets](https://www.hecochain.com/en-us/wallet) that HECO suggests.
 
 
 ### Let's party!
@@ -24,24 +21,20 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
 1. Download miner
 
     There two platform supported right now: 
-    * [Windows](https://github.com/Algorithmic-Bitcoin/abtc-miner-electron/releases/download/0.3.1/Miner-0.3.1.exe) 
+    * [Windows](https://github.com/Algorithmic-Bitcoin/abtc-miner-electron/releases/download/v0.4.0/Miner-0.4.0.exe) 
     
-        (MD5: 05af9cb5b055052807e2e9daf0a72e73, SHA1: 546f88edc791bfe64b9a880eaf1eb4fbe920202a)
-    * [MacOS](https://github.com/Algorithmic-Bitcoin/abtc-miner-electron/releases/download/0.3.1/Miner-0.3.1.dmg) 
+        (MD5: 26d44fd375a8f6b605a4af4c89c57091, SHA1: 21b8a2464869b087f538dd0e289990938ae0bb43)
+    * [MacOS](https://github.com/Algorithmic-Bitcoin/abtc-miner-electron/releases/download/v0.4.0/Miner-0.4.0.dmg) 
     
-        (MD5: 666434a19f9df2146dc0db5e0391cf70, SHA1: 67700cf6bc232efbb7dd5a150eb2cf429abf6301)
+        (MD5: 85774ae65bac4c95703e42a715b2120b, SHA1: 1cc0c20fc928b5338c923ab0be32d92412d198bf)
     
     Chooese one what suits for you.
 
 2. Configure
 
-    Open miner application. There are 4 fields you should fill in.
+    Open miner application. There are 2 fields you should fill in.
     
-    `RPC endpoint` is what you applied above. It's important to remember that infura free service has a max of 100000 request per day, so if you run out of request, you should a new RPC endpoint so that you can continue, otherwise it will fail when you submit your mined block.
-    
-    `Private key` is your hex string format of private key, you should always handle your private key carefully, for a surcurity reason, you shouldn't have much ETH in your mining account, just some ETH that enough to pay the gas will do.
-    
-    `Gas Price` is the gas price you provide when you submit mined blocks. It is recommended that you should always choose `HIGH` option for quick mining speed.
+    `Private key` is your hex string format of private key, you should always handle your private key carefully, for a surcurity reason, you shouldn't have much HT in your mining account, just some HT that enough to pay the gas will do.
     
     `Process number` is how many miners your application to start, it is recommended that you should set it as your CPU proccer's number.
     
@@ -63,9 +56,11 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
     
     `Target` is current target of POW. Target and difficulty are opposite, while target be bigger, difficluty be smaller, vice versa.
     
-    `Height` is current height of POW, it increases 1 per block. The average block time is 10 minutes theoretically speaking, just like *Bitcoin*.
+    `Height` is current height of POW, it increases 1 per block. The average block time is 1 minutes theoretically speaking.
     
-    `Balance` is your ABTC balance, it changes when your balance changes. For example, you mined a block, or somebodu send you ABTC coin.
+    `Mine Fee` is current mining fee of POW, it is decided by DAO, and is used for buy ABTC in ABTC/WBTC pair.
+    
+    `ABTC Balance` is your ABTC balance, it changes when your balance changes. For example, you mined a block, or somebodu send you ABTC coin.
     
     `Log` prints something running logs during whole application.
  
@@ -78,9 +73,4 @@ It's a free chance for everyone to join the mining party of Bitcoin on Ethereum.
     keccak256(new_height, last_nonce, my_account, my_nonce) <= current_target
     ```
     
-    The core code is determine if your calculated target is smaller than current target. The target changed every 3 blocks, which means 30 minutes theoretically speaking.
-
-## Donation
-
-Please denote ABTC to us at `0x276Fd60790e458df29D972cc8D83783350Bc0cc0`, which will be used for the early community promotion.
-
+    The core code is determine if your calculated target is smaller than current target. The target changed every 6 blocks, which means 6 minutes theoretically speaking.
